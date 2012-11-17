@@ -55,6 +55,8 @@
 
 blockquote {
   border: none;
+  margin: 0; 
+  padding: 0 0 26px 30px;
 }
 
 body {
@@ -159,7 +161,7 @@ header {
     content: ".";
     display: block;
     line-height: .50em;
-    width: 8em;
+    /* --- width: 8em; ---*/
   }
 
 .icon {
@@ -256,7 +258,7 @@ header .nav-pills-contact a.btn {
   font-size: 600%;
   font-family: Helvetica, Arial, sans-serif;
   float: left;
-  margin: 20px 20px 20px -15px;
+  margin: 20px 20px 40px -30px;
 }
 
 /**
@@ -584,9 +586,14 @@ footer a {
 
 
 /*------------------------------*/
+
 .bq-horiz {
   margin: 0;
   padding: 0 0 66px 30px;
+}
+
+.table tfoot tr {
+  border-bottom: 2px solid #888;
 }
 
 .legend {
@@ -625,6 +632,21 @@ footer a {
   height: 253px;
 }
 
+.intro.vps_hosting {
+  background: url(http://www.managedinternetpresence.com/cam/leader-vps-server.png) no-repeat top center, url(http://www.managedinternetpresence.com/cam/leader-bg-vps.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 286px;
+}
+
+.leader-biz-cta-place {
+  float: right;
+  margin: 60px 121px 0 0;
+}
+.leader-vps-cta-place {
+  float: right;
+  margin: 0 -49px 0 0;
+}
+
 .tabbg {
   background-color: #f5f5f5;
 }
@@ -634,12 +656,6 @@ footer a {
   padding-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
-  width: 200px;
-}
-
-.leader-biz-cta-place {
-  float: right;
-  margin: 60px 121px 0 0;
 }
 
 .tier-space {
@@ -676,6 +692,11 @@ sub {
   background-image: url(../../img/ideal.png);
 }
 
+.checkli 
+li {
+  list-style-image: url(../../img/ideal.png);
+}
+
 .split-center-mid {
   padding: 0 40px;
 }
@@ -685,6 +706,15 @@ sub {
   line-height: 18px;
   padding: 20px;
   width: 419px;
+}
+
+.adthree {
+  padding: 20px; 
+  width: 258px;
+}
+
+.mr20 {
+  margin-right: 20px;
 }
 
 .iconleft {
@@ -730,9 +760,13 @@ sub {
   padding: 40px 0 0;
 }
 
-.island30 {
-  outline: 1px solid #ccc;
-  padding: 30px;
+.island0 {
+  outline: none;
+}
+
+.island20 {
+  border: 1px solid #ccc;
+  padding: 20px;
 }
 
 .dc {
@@ -770,6 +804,10 @@ sub {
 .oth-icon {
   float: left;
   margin: 12px 12px 0 0;
+}
+
+.supportbox {
+  float: left;
 }
 
 .inp-fatty {
