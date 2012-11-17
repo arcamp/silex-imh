@@ -159,7 +159,7 @@ header {
     content: ".";
     display: block;
     line-height: .50em;
-    width: 8em;
+    /* --- width: 8em; ---*/
   }
 
 .icon {
@@ -254,7 +254,7 @@ header .nav-pills-contact a.btn {
   font-size: 600%;
   font-family: Helvetica, Arial, sans-serif;
   float: left;
-  margin: 20px 20px 20px -30px;
+  margin: 20px 20px auto -30px;
 }
 
 /**
@@ -589,6 +589,10 @@ footer a {
 
 
 /*------------------------------*/
+.table tfoot tr {
+  border-bottom: 2px solid #888888;
+}
+
 .legend {
     background-color: #ededed;
   margin-top: 30px;
@@ -625,6 +629,21 @@ footer a {
   height: 253px;
 }
 
+.intro.vps_hosting {
+  background: url(http://www.managedinternetpresence.com/cam/leader-vps-server.png) no-repeat top center, url(http://www.managedinternetpresence.com/cam/leader-bg-vps.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 286px;
+}
+
+.leader-biz-cta-place {
+  float: right;
+  margin: 60px 121px 0 0;
+}
+.leader-vps-cta-place {
+  float: right;
+  margin: 0 -49px 0 0;
+}
+
 .tabbg {
   background-color: #f5f5f5;
 }
@@ -634,12 +653,6 @@ footer a {
   padding-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
-  width: 200px;
-}
-
-.leader-biz-cta-place {
-  float: right;
-  margin: 60px 121px 0 0;
 }
 
 .tier-space {
@@ -685,6 +698,11 @@ sub {
   line-height: 18px;
   padding: 20px; 
   width: 419px;
+}
+
+.adthree {
+  padding: 20px; 
+  width: 270px;
 }
 
 .iconleft {
@@ -770,6 +788,10 @@ sub {
 .oth-icon {
   float: left;
   margin: 12px 12px 0 0;
+}
+
+.supportbox {
+  float: left;
 }
 
 .inp-fatty {
