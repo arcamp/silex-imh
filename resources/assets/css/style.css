@@ -587,6 +587,13 @@ footer a {
 
 
 /*------------------------------*/
+
+.dedi-specification .table-striped thead th.table-col-3,
+.dedi-specification .table-striped tfoot td.table-col-3,
+.dedi-specification .table-striped tbody td.table-col-3 {
+  background-color: rgba(77, 160, 225, 0.15);
+}
+
 .bq-horiz {
   margin: 0; 
   padding: 0 0 66px 30px;
@@ -622,10 +629,10 @@ footer a {
   width: 100%
 }
 
-.intro.business_hosting {
-  background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+.intro.dedicated_servers {
+  background: url(../../img/leader-dedi-tower.png) no-repeat top center, url(../../img/leader-bg-dedi.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
   display: block;
-  height: 253px;
+  height: 284px;
 }
 
 .tabbg {
@@ -640,9 +647,9 @@ footer a {
   width: 200px;
 }
 
-.leader-biz-cta-place {
+.leader-dedi-cta-place {
   float: right;
-  margin: 60px 121px 0 0;
+  margin: 123px 157px 0 0;
 }
 
 .tier-space {
