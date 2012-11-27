@@ -588,6 +588,10 @@ footer a {
 
 /*------------------------------*/
 
+.m-20 {
+  margin: 0 0px 0 -20px;
+}
+
 .dedi-specification .table-striped thead th.table-col-3,
 .dedi-specification .table-striped tfoot td.table-col-3,
 .dedi-specification .table-striped tbody td.table-col-3 {
