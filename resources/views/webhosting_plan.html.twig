@@ -90,8 +90,9 @@
         <div class="row-fluid suggestion">
             <h3 class="island raised"><img src="./img/bolt.png" width="12" height="24" alt="" />
 
-                Need More Hosting Power? Learn about our <a href="#">VPS</a> and <a href="#">Dedicated Servers.</a>
-
+            {# suggestion #}
+            {% block suggestion %}
+            {% endblock %}
 
             </h3>
         </div>
@@ -100,7 +101,11 @@
     <div class="wrap raised">
         <div class="container">
             <div class="row">
-                <h2 class="span8">Contact our Business Hosting Experts</h2>
+                <h2 class="span8">
+            {# contacttitle #}
+            {% block contacttitle %}
+            {% endblock %}
+                </h2>
                 <p class="span8">Fill out the form below for a no-obligation consultation. Your email and phone number will only be used to communicate with you concerning the results of the evaluation.</p>
             </div>
             <div class="container">
@@ -111,8 +116,8 @@
                             <input id="fullName" type="text" placeholder="Full Name" class="span11" />
                             <label class="a11y" for="desiredUrl">Website URL Desired</label>
                             <input id="desiredUrl" type="text" placeholder="Website URL Desired" class="span11" />
-                            <label class="a11y span11" for="phoneNumber">Your Phone #</label>
-                            <input id="phoneNumber span11" type="text" placeholder="Your Phone #" />
+                            <label class="a11y" for="phoneNumber">Your Phone #</label>
+                            <input id="phoneNumber span11" type="text" placeholder="Your Phone #" class="span11" />
                         </div>
                         <div class="span4">
                             <label>Currently an InMotion Hosting Customer?</label>

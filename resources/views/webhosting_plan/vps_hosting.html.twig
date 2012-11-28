@@ -17,7 +17,7 @@
         <p>Works like you have your own machine - powerful, affordable, and includes a custom firewall, dedicated mail server and more control over security! VPS hosting is a great fit for businesses expecting rapid growth, heavy website traffic, or who run highly interactive, dynamic websites. InMotion Hosting partitions a high-performance server into multiple virtual servers, each with a reserved amount of CPU and RAM resources. </p>
     </div>
     <div class="leader-vps-cta-place">
-        <div class="span3"><span class="btn btn-primary">order now</span></div>
+        <div class="span3"><a href class="btn btn-primary">order now</a></div>
      </div>
 {% endblock %}
 {# secondplaceplan #}
@@ -27,7 +27,7 @@
     <p class="package-subtitle">Affordable performance & flexibility</p>
     <div class="pricebox offs"><sup>$</sup>29<sup>95</sup><sub>/mo.<sub></div>
     <dl class="split-center">
-        <dt class="split-center-title">RAM</dt>
+        <dt class="split-center-title">RAM:</dt>
         <dd class="split-center-value">512MB / 1GB Burstable</dd></br>
         <dt class="split-center-title">Storage:</dt>
         <dd class="split-center-value">40GB</dd></br>
@@ -50,7 +50,7 @@
     <p class="package-subtitle">The best value for responsive, powerful websites</p>
     <div class="pricebox offs"><sup>$</sup>49<sup>95</sup><sub>/mo.<sub></div>
     <dl class="split-center-mid">
-        <dt class="split-center-title">RAM</dt>
+        <dt class="split-center-title">RAM:</dt>
         <dd class="split-center-value">1GB / 2GB Burstable</dd></br>
         <dt class="split-center-title">Storage:</dt>
         <dd class="split-center-value">80GB</dd></br>
@@ -71,9 +71,9 @@
 {% block thirdplaceplan %}
     <h3 class="icon package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">vps-3000</h3>
     <p class="package-subtitle">Ultimate performance</p>
-    <div class="pricebox"><sup>$</sup>74<sup>95</sup><sub>/mo.<sub></div>
+    <div class="pricebox offs"><sup>$</sup>74<sup>95</sup><sub>/mo.<sub></div>
     <dl class="split-center">
-        <dt class="split-center-title">RAM</dt>
+        <dt class="split-center-title">RAM:</dt>
         <dd class="split-center-value">2GB / 3GB Burstable</dd></br>
         <dt class="split-center-title">Storage:</dt>
         <dd class="split-center-value">160GB</dd></br>
@@ -101,17 +101,32 @@
 {# webhostingtabbedcontent #}
 {% block webhostingtabbedcontent %}
 
-<div class="tab-pane" id="uses">
-    <ul class="nav nav-tabs nav-stacked">
-        <li><a href="" class="overview">Overview</a></li>
-        <li><a href="" class="support">Support</a></li>
-        <li><a href="" class="technology">Technology</a></li>
-        <li><a href="" class="reliability">Reliability</a></li>
-        <li><a href="" class="guarantee">Guarantee</a></li>
-        <li><a href="" class="software">Software</a></li>
-        <li><a href="" class="gogreen">Go Green</a></li>
-    </ul>
-</div><!-- /#uses -->
+<!-- #uses -->
+<div class="tab-pane m-20" id="uses">
+    <div class="span3 pull-left">
+        <ul class="nav nav-tabs nav-stacked">
+            <li><a href="#t1">E-Commerce</a></li>
+            <li><a href="#t2">Root Access</a></li>
+            <li><a href="#t3">Jabber (XMPP) Server</a></li>
+            <li><a href="#t4">Project Management</a></li>
+            <li><a href="#t5">Online Training</a></li>
+        </ul>
+    </div>
+        <div class="tab-content">
+            <div class="span8 pull-right split-center-mid tab-pane active" id="t1"><h3>E-Commerce</h3><p>Increase revenue by operating an online store with PrestaShop. Use our one click installer included with every VPS to get started today. Our VPS have enough RAM at an affordable price in order to run your new shop, your website and your email efficiently.</p>
+            </div>
+            <div class="span8 pull-right split-center-mid tab-pane" id="t2"><h3>Root Access</h3><p>Need root access to run third party applications? Choose a VPS product with the memory specifications that best fit your needs to take full control of you server.
+</p>
+            </div>
+            <div class="span8 pull-right split-center-mid tab-pane" id="t3"><h3>Jabber (XMPP) Server</h3><p>Enhance communication and collaboration within your business with a Jabber server. Share files, notes and instant message communications with free XMPP software that runs beautifully on our line of VPS products. Best of all, its secure and private – just right for your business.</p>
+            </div>
+            <div class="span8 pull-right split-center-mid tab-pane" id="t4"><h3>Project Management</h3><p>Improve communication between clients and your employees alike with a variety of open source software solutions for collaborative project management, bug reporting, support tickets and more.</p>
+            </div>
+            <div class="span8 pull-right split-center-mid tab-pane" id="t5"><h3>Online Training</h3><p>Need to ensure accuracy across different groups in your workplace? Setup a company Wiki to ensure associates have information, policies and SOP’s at their fingertips. Need to train in multiple locations? Ensure consistency with online seminars and training through Moodle.</p>
+            </div>
+        </div>
+</div>
+<!-- /#uses -->
 
 <div class="tab-pane active business-specification" id="specifications">
     <table class="table table-striped">
@@ -120,10 +135,9 @@
         <colgroup span="1" class="plan-specification-example"></colgroup>
         <colgroup span="1"></colgroup>
         <colgroup span="1" class="plan-specification-featured"></colgroup>
-        <colgroup span="1"></colgroup>
+
         <thead>
             <tr>
-                <td></td>
                 <td></td>
                 <th scope="col" class="tb-title">VPS-1000</th>
                 <th scope="col" class="tb-title">VPS-2000</th>
@@ -134,7 +148,6 @@
         <tfoot>
             <tr>
                 <th scope="row">Price</th>
-                <td></td>
                 <td>$29.95/mo</td>
                 <td>$49.95/mo</td>
                 <td>$74.95/mo</td>
@@ -143,77 +156,98 @@
         <tbody>
             <tr>
                 <th scope="row">Dedicated Memory</th>
-                <td></td>
                 <td>512MB</td>
                 <td>1GB</td>
                 <td>2GB</td>
             </tr>
             <tr>
-                <th scope="row">Burstable Memory</th>
-                <td></td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme1">Burstable Memory</span>
+                <div id="showme1" class="collapse in">
+                    <p>In addition to the dedicated RAM included with your VPS account, we offer Burstable RAM for short periods of unexpected memory usage. Burstable RAM allows you to use resources over your dedicated memory allotment on a temporary basis. This keeps you protected from downtime or site slowdown if and when you receive large spikes in traffic.With most competitors, if your VPS spikes beyond your dedicated memory, your site will stop responding or immediately be suspended. Please note that this feature is included free of charge, however consistent usage over the dedicated memory allotment may require an upgrade to a more robust package.</p>
+                </div>
                 <td>1GB</td>
                 <td>2GB</td>
                 <td>3GB</td>
             </tr>
             <tr>
-                <th scope="row">Monthly Premium Transfer</th>
-                <td></td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme2">Monthly Premium Transfer</span>
+                <div id="showme2" class="collapse in">
+                    <p>Today's broadband connections demand faster and more reliable performance from your web site and email. With an InMotion Hosting VPS account you'll have access to the fastest Gigabit network available. Our network was specifically built to be expandable for capacity and for throughput. Our all Gigabit server farm is connected to the Internet through 3 separate providers with an on demand capacity exceeding 7,500 MBits. We utilize BGP4 Smart Routing and can switch instantly and transparently away from any of our providers that are experiencing latency or downtime. Our advanced knowledge and planning allow us to provide extremely fast and reliable service while still offering affordable hosting on our virtual private servers.
+                        <ul><li>Smart Routing (BGP4) over 3 Tier I Providers</li>
+                            <li>On Demand bandwidth exceeding 7,500 MBits</li>
+                            <li>All Gigabit Internal Network</p></li>
+                        </ul>
+                    </p>
+                </div>
                 <td>750GB</td>
                 <td>1500GB</td>
                 <td>2500GB</td>
             </tr>
             <tr>
-                 <th scope="row">RAID 10 Fault Tolerant Disk Space</th>
-                <td></td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme3">RAID 10 Fault Tolerant Disk Space</span>
+                <div id="showme3" class="collapse in">
+                    <p>Accounts hosted on our virtual private servers are now provisioned with RAID 10! RAID (Redundant Array of Independent Disks) is a way of storing the same data on multiple hard disks to improve performance and increase fault tolerance. RAID 10 provides increased write speeds and rebuild performance when compared to other RAID types. In the rare event a hard drive fails, the machine continues to serve your site, and we seamlessly replace the failed drive from our on hand supply.</p>
+                </div>
+
                 <td>40GB</td>
                 <td>80GB</td>
                 <td>160GB</td>
             </tr>
             <tr>
-                <th scope="row">Dedicated IP Addresses</th>
-                <td></td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme4">Dedicated IP Addresses</span>
+                <div id="showme4" class="collapse in">
+                    <p>Included IP addresses are provided for free but on a need basis. ARIN rules require actual usage of an IP address so you must submit the domain name associated with any additional IP addresses. Additional IP addresses above the included IPs are available - please call our sales staff for pricing depending on number of IPs required. Limitations apply and this is no guarantee of availability.</p>
+                </div>
                 <td>2</td>
                 <td>5</td>
                 <td>10</td>
             </tr>
             <tr>
-                <th scope="row">Full cPanel License</th>
-                <td>$425/yr. value!</td>
+                <th scope="row">Full cPanel License ($425/yr Value!)</th>
+
                 <td>FREE</td>
                 <td>FREE</td>
                 <td>FREE</td>
             </tr>
             <tr>
-                 <th scope="row">Domains/Websites Allowed</th>
-                <td></td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme5">Domains/Websites Allowed</span>
+                <div id="showme5" class="collapse in">
+                    <p>This allows you to have multiple websites hosted under one account - with separate domain names for each one.</p>
+                </div>
                 <td>UNLIMITED</td>
                 <td>UNLIMITED</td>
                 <td>UNLIMITED</td>
             </tr>
             <tr>
-                <th scope="row">CentOS 6: Enterprise Class Linux</th>
-                <td></td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme6">CentOS 6: Enterprise Class Linux</span>
+                <div id="showme6" class="collapse in">
+                    <p>CentOS is the most popular version of Linux for web servers. It is an open-source Linux distribution derived from Red Hat Enterprise Linux (RHEL), but it is not affiliated with Red Hat, Inc. With its fast-growing base of users and community contributors, CentOS is constantly tested and updated to ensure that its users have a stable, secure and high-performance hosting environment. A recent version of CentOS is included with every InMotion VPS plan. InMotion has utilized CentOS as its primary server operating system for over 10 years. As a result of this experience, our technical teams are expert in how CentOS functions. They use this know-how to optimize CentOS for peak performance and stability and they are able to provide you with in-depth technical assistance should you need it.</p>
+                </div>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
             </tr>
             <tr>
                 <th scope="row">Monthly Billing</th>
-                <td></td>
                 <td>$50/mo.</td>
                 <td>$90/mo.</td>
                 <td>$170/mo.</td>
             </tr>
             <tr>
                 <th scope="row">Semi-Annual Billing</th>
-                <td></td>
                 <td>$45/mo.</td>
                 <td>$85/mo.</td>
                 <td>$160/mo.</td>
             </tr>
         </tbody>
     </table>  
-    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>                  
+    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>
 </div><!-- /#specifications -->
 <div class="tab-pane" id="support">
     <div class="island0 pull-left adthree mr20">
@@ -378,6 +412,17 @@
     </table>
 </div><!-- /#compare -->
 {% endblock %}
+
+{# suggestion #}
+{% block suggestion %}
+Need More Hosting Power? Learn about our <a href="#">Dedicated Servers.</a>
+{% endblock %}
+
+{# contacttitle #}
+{% block contacttitle %}
+Contact our VPS Hosting Experts
+{% endblock %}
+
 {# testimonial #}
 {% block testimonial %}
     <div class="row span8 island sunken">

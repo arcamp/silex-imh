@@ -587,6 +587,18 @@ footer a {
 
 /*------------------------------*/
 
+.collapse p {
+  font-weight: 400;
+}
+
+.curs {
+  cursor: pointer;
+}
+
+.m-20 {
+  margin: 0 0px 0 -20px;
+}
+
 .bq-horiz {
   margin: 0;
   padding: 0 0 66px 30px;
@@ -644,7 +656,7 @@ footer a {
 }
 .leader-vps-cta-place {
   float: right;
-  margin: 0 -49px 0 0;
+  margin: 0 -50px 0 0;
 }
 
 .tabbg {
