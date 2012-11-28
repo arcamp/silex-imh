@@ -88,14 +88,22 @@
 
         </div><!-- /.tab-content -->
         <div class="row-fluid suggestion">
-            <h3 class="island raised"><img src="./img/bolt.png" width="12" height="24" alt="" />Need More Hosting Power? Learn about our <a href="#">VPS</a> and <a href="#">Dedicated Servers.</a></h3>
+            <h3 class="island raised"><img src="./img/bolt.png" width="12" height="24" alt="" />
+            {# suggestion #}
+            {% block suggestion %}
+            {% endblock %}
+            </h3>
         </div>
         </div>
     </div>
     <div class="wrap raised">
         <div class="container">
             <div class="row">
-                <h2 class="span8">Contact our Business Hosting Experts</h2>
+                <h2 class="span8">
+            {# contacttitle #}
+            {% block contacttitle %}
+            {% endblock %}
+                </h2>
                 <p class="span8">Fill out the form below for a no-obligation consultation. Your email and phone number will only be used to communicate with you concerning the results of the evaluation.</p>
             </div>
             <div class="container">
