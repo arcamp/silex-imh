@@ -17,7 +17,7 @@
         <p>Works like you have your own machine - powerful, affordable, and includes a custom firewall, dedicated mail server and more control over security! VPS hosting is a great fit for businesses expecting rapid growth, heavy website traffic, or who run highly interactive, dynamic websites. InMotion Hosting partitions a high-performance server into multiple virtual servers, each with a reserved amount of CPU and RAM resources. </p>
     </div>
     <div class="leader-vps-cta-place">
-        <div class="span3"><a href class="btn btn-primary">order now</a></div>
+        <div class="span3"><a href="#" class="btn btn-primary over">order now</a></div>
      </div>
 {% endblock %}
 {# secondplaceplan #}
@@ -113,16 +113,26 @@
         </ul>
     </div>
         <div class="tab-content">
-            <div class="span8 pull-right split-center-mid tab-pane active" id="t1"><h3>E-Commerce</h3><p>Increase revenue by operating an online store with PrestaShop. Use our one click installer included with every VPS to get started today. Our VPS have enough RAM at an affordable price in order to run your new shop, your website and your email efficiently.</p>
+            <div class="tu-span pull-right tab-pane active" id="t1">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-magento.png" /><img src="{{ app.request.basepath }}/img/tu-logo-prestashop.png" /></div>
+            <h3>E-Commerce</h3><p>Increase revenue by operating an online store with PrestaShop. Use our one click installer included with every VPS to get started today. Our VPS have enough RAM at an affordable price in order to run your new shop, your website and your email efficiently.</p>
             </div>
-            <div class="span8 pull-right split-center-mid tab-pane" id="t2"><h3>Root Access</h3><p>Need root access to run third party applications? Choose a VPS product with the memory specifications that best fit your needs to take full control of you server.
+            <div class="tu-span pull-right tab-pane" id="t2">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-gear.png" /></div>
+            <h3>Root Access</h3><p>Need root access to run third party applications? Choose a VPS product with the memory specifications that best fit your needs to take full control of you server.
 </p>
             </div>
-            <div class="span8 pull-right split-center-mid tab-pane" id="t3"><h3>Jabber (XMPP) Server</h3><p>Enhance communication and collaboration within your business with a Jabber server. Share files, notes and instant message communications with free XMPP software that runs beautifully on our line of VPS products. Best of all, its secure and private – just right for your business.</p>
+            <div class="tu-span pull-right tab-pane" id="t3">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-jabber.png" /></div>
+            <h3>Jabber (XMPP) Server</h3><p>Enhance communication and collaboration within your business with a Jabber server. Share files, notes and instant message communications with free XMPP software that runs beautifully on our line of VPS products. Best of all, its secure and private – just right for your business.</p>
             </div>
-            <div class="span8 pull-right split-center-mid tab-pane" id="t4"><h3>Project Management</h3><p>Improve communication between clients and your employees alike with a variety of open source software solutions for collaborative project management, bug reporting, support tickets and more.</p>
+            <div class="tu-span pull-right tab-pane" id="t4">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-joomla.png" /><img src="{{ app.request.basepath }}/img/tu-logo-drupal.png" /></div>
+            <h3>Project Management</h3><p>Improve communication between clients and your employees alike with a variety of open source software solutions for collaborative project management, bug reporting, support tickets and more.</p>
             </div>
-            <div class="span8 pull-right split-center-mid tab-pane" id="t5"><h3>Online Training</h3><p>Need to ensure accuracy across different groups in your workplace? Setup a company Wiki to ensure associates have information, policies and SOP’s at their fingertips. Need to train in multiple locations? Ensure consistency with online seminars and training through Moodle.</p>
+            <div class="tu-span pull-right tab-pane" id="t5">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-clipboard.png" /></div>
+            <h3>Online Training</h3><p>Need to ensure accuracy across different groups in your workplace? Setup a company Wiki to ensure associates have information, policies and SOP’s at their fingertips. Need to train in multiple locations? Ensure consistency with online seminars and training through Moodle.</p>
             </div>
         </div>
 </div>
@@ -148,9 +158,12 @@
         <tfoot>
             <tr>
                 <th scope="row">Price</th>
-                <td>$29.95/mo</td>
-                <td>$49.95/mo</td>
-                <td>$74.95/mo</td>
+                <td><span class="smallprice">$29.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span  class="smallprice">$49.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$74.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
             </tr>
         </tfoot>
         <tbody>
@@ -326,7 +339,7 @@
         <thead>
             <tr>
                 <td></td>
-                <th scope="col" class="tb-title">InMotion Hosting</th>
+                <th scope="col" class="tb-title"><img src="{{ app.request.basepath }}/img/logo-inmotion-hosting-mini.png" alt="The InMotion Hosting Advantage" /></th>
                 <th scope="col" class="tb-title">Spry</th>
                 <th scope="col" class="tb-title">VPS Land</th>
                 <th scope="col" class="tb-title">HOSTV</th>
@@ -335,8 +348,8 @@
         </thead>
         <tfoot>
             <tr>
-                <td></td>
-                <td><a href="#">Order Now</a></td>
+                <td style="border-left: 0;"></td>
+                <td><a href="#" class="btn btn-primary over">order now</a></td>
                 <td></td>
                 <td></td>
                 <td></td>
