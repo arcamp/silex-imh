@@ -114,8 +114,8 @@
                             <input id="fullName" type="text" placeholder="Full Name" class="span11" />
                             <label class="a11y" for="desiredUrl">Website URL Desired</label>
                             <input id="desiredUrl" type="text" placeholder="Website URL Desired" class="span11" />
-                            <label class="a11y span11" for="phoneNumber">Your Phone #</label>
-                            <input id="phoneNumber span11" type="text" placeholder="Your Phone #" />
+                            <label class="a11y" for="phoneNumber">Your Phone #</label>
+                            <input id="phoneNumber span11" type="text" placeholder="Your Phone #" class="span11" />
                         </div>
                         <div class="span4">
                             <label>Currently an InMotion Hosting Customer?</label>
@@ -131,15 +131,17 @@
                     </form>
                 </div>
             </div>
-             <div class="row wrap">
-        <div class="dc span3">
-            <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" >
-            <br>
-    Moving domains can be messy. We'll handle the dirty work. <br>
-    <a href="#">Learn More</a></div>
-{# testimonial #}
-{% block testimonial %}
-{% endblock %}   
+            <div class="row wrap">
+                <div class="dc span3">
+                    <img src="{{ app.request.basepath }}/img/logo-dc.png" alt="Domain Concierge logo" /><br />Moving domains can be messy. We'll handle the dirty work. <br />
+                    <a href="#">Learn More</a>
+                </div>
+
+        {# testimonial #}
+        {% block testimonial %}
+        {% endblock %}
+
+            </div>
         </div>
      </div>
 </div>
