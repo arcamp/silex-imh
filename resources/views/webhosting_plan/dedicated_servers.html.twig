@@ -75,7 +75,7 @@
     <p class="package-subtitle">High performance</p>
     <div class="pricebox"><sup>$</sup>189<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
-        <dt class="split-center-title">Intel Xeon E3-1230 3.2GHz 8MB Cache Turbo Quad Core /8T</dt>
+        <dt class="split-center-title">Intel® Xeon® E3-1230 3.2GHz 8MB Cache Turbo Quad Core /8T</dt>
         <dd class="split-center-value"></dd></br>
         <dt class="split-center-title">Storage:</dt>
         <dd class="split-center-value">500GB</dd></br>
@@ -91,6 +91,60 @@
     <div class="mid">
         <a href="#" class="btn btn-primary over">order now</a>
     </div>
+{% endblock %}
+
+{# commercial #}
+{% block commercial %}
+
+<div class="container">
+    <div class="row island-nopad raised comtop">
+        <div class="combox pull-left">
+            <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier-c.png" alt="Pro Business Package" class="tier-space">COMMERCIAL #1</h3>
+            <p class="package-subtitle">Intense server grade machines</p>
+            <div class="pricebox"><sup>$</sup>469<sup>95</sup><sub>/mo.</sub></div>
+            <dl class="split-center">
+                <dt class="split-center-title">Intel® Xeon® E5645 2.4GHz, 12M Cache, 5.86 GT/s QPI, 6C/12T</dt>
+                <dd class="split-center-value"></dd></br>
+                <dt class="split-center-title">RAM:</dt>
+                <dd class="split-center-value">16GB</dd></br>
+                <dt class="split-center-title">Storage:</dt>
+                <dd class="split-center-value">RAID1 600GB</dd></br>
+                <dt class="split-center-title">Bandwith:</dt>
+                <dd class="split-center-value">3.0TB/mo.</dd></br>
+                <dt class="split-center-title">IP Addresses:</dt>
+                <dd class="split-center-value">20</dd></br>
+                <dt class="split-center-title">Environment:</dt>
+                <dd class="split-center-value">CentOS, cPanel, WHM</dd></br>
+            </dl>
+            <div class="com-mid">
+                <a href="#" class="btn btn-primary over">order now</a>
+            </div>
+        </div>
+        <div class="combox pull-right compipe">
+            <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier-c.png" alt="Pro Business Package" class="tier-space">COMMERCIAL #2</h3>
+            <p class="package-subtitle">Extreme performance</p>
+            <div class="pricebox"><sup>$</sup>569<sup>95</sup><sub>/mo.</sub></div>
+            <dl class="split-center">
+                <dt class="split-center-title">Intel® Xeon® E5645 2.4GHz, 12M Cache, 5.86 GT/s QPI, 12C/24T</dt>
+                <dd class="split-center-value"></dd></br>
+                <dt class="split-center-title">RAM:</dt>
+                <dd class="split-center-value">32GB</dd></br>
+                <dt class="split-center-title">Storage:</dt>
+                <dd class="split-center-value">RAID1 600GB</dd></br>
+                <dt class="split-center-title">Bandwith:</dt>
+                <dd class="split-center-value">3.0TB/mo.</dd></br>
+                <dt class="split-center-title">IP Addresses:</dt>
+                <dd class="split-center-value">25</dd></br>
+                <dt class="split-center-title">Environment:</dt>
+                <dd class="split-center-value">CentOS, cPanel, WHM</dd></br>
+            </dl>
+            <div class="com-mid">
+                <a href="#" class="btn btn-primary over">order now</a>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
 
 {# webhostingtabbednav #}

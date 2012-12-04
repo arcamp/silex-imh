@@ -587,6 +587,21 @@ footer a {
 
 /*------------------------------*/
 
+.comtop {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.island-nopad {
+  outline: 1px solid #ccc;
+}
+
+.combox {
+  width: 430px;
+  padding: 20px;
+  text-align: center;
+}
+
 .dedi-specification .table-striped thead th.table-col-3,
 .dedi-specification .table-striped tfoot td.table-col-3,
 .dedi-specification .table-striped tbody td.table-col-3 {
@@ -596,7 +611,8 @@ footer a {
 .dedi-specification .table-striped thead th.table-col-3,
 .dedi-specification .table-striped thead th.table-col-4,
 .dedi-specification .table-striped thead th.table-col-5,
-.dedi-specification .table-striped thead th.table-col-6 {
+.dedi-specification .table-striped thead th.table-col-6,
+.compipe {
   border-left: 1px solid #ccc;
 }
 
@@ -720,7 +736,13 @@ footer a {
   left: 0;
   margin: 6px auto 0;
   position: absolute;
-  width: 100%
+  width: 100%;
+}
+
+.com-mid {
+  margin: 6px auto 0;
+  position: absolute;
+  width: 430px;
 }
 
 .smallprice {
