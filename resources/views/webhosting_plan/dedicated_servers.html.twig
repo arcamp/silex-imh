@@ -25,7 +25,7 @@
     <h3 class="blanky package-title">
     <img src="{{ app.request.basepath }}/img/package-icon-tier1.png" alt="Launch Business Package" class="tier-space">ESSENTIAL</h3>
     <p class="package-subtitle">Affordable solution for your needs</p>
-    <div class="pricebox offs"><sup>$</sup>119<sup>95</sup><sub>/mo.</sub></div>
+    <div class="pricebox"><sup>$</sup>119<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
         <dt class="split-center-title">Intel Core E2220/E5400</dt>
         <dd class="split-center-value">Dual Core /2T</dd>
@@ -46,9 +46,10 @@
 {% endblock %}
 {# firstplaceplan #}
 {% block firstplaceplan %}
+    <div class="badge"><p>BEST<br/>VALUE</p></div>
     <h3 class="blanky package-title"><img src="{{ app.request.basepath }}/img/package-icon-tier2.png" alt="Power Business Package" class="tier-space">ADVANCED</h3>
     <p class="package-subtitle">The best value for responsive, powerful websites</p>
-    <div class="pricebox offs"><sup>$</sup>139<sup>95</sup><sub>/mo.</sub></div>
+    <div class="pricebox"><sup>$</sup>139<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
         <dt class="split-center-title">Intel Xeon E3-1220 3.1GHz 8MB Cache Turbo Quad Core /4T</dt>
         <dd class="split-center-value"></dd>
@@ -69,7 +70,8 @@
 {% endblock %}
 {# thirdplaceplan #}
 {% block thirdplaceplan %}
-    <h3 class="icon package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">ELITE</h3>
+    <div class="badge blue"><p>RAID</p></div>
+    <h3 class="package-title blanky"><img src="{{ app.request.basepath }}/img/package-icon-tier3.png" alt="Pro Business Package" class="tier-space">ELITE</h3>
     <p class="package-subtitle">High performance</p>
     <div class="pricebox"><sup>$</sup>189<sup>95</sup><sub>/mo.</sub></div>
     <dl class="split-center">
@@ -90,6 +92,7 @@
         <a href="#" class="btn btn-primary over">order now</a>
     </div>
 {% endblock %}
+
 {# webhostingtabbednav #}
 {% block webhostingtabbednav %}
     <li><a href="#uses" data-toggle="tab">Typical Uses</a></li>
@@ -97,23 +100,46 @@
     <li><a href="#support" data-toggle="tab">Support</a></li>
     <li><a href="#developers" data-toggle="tab">Developers</a></li>
 {% endblock %}
+
 {# webhostingtabbedcontent #}
 {% block webhostingtabbedcontent %}
 <!-- #uses -->
 <div class="tab-pane m-20" id="uses">
     <div class="span3 pull-left">
         <ul class="nav nav-tabs nav-stacked">
-            <li><a href="" class="overview">Typical Use 1</a></li>
-            <li><a href="" class="support">Typical Use 2</a></li>
-            <li><a href="" class="technology">Typical Use 3</a></li>
-            <li><a href="" class="reliability">Typical Use 4</a></li>
-            <li><a href="" class="guarantee">Typical Use 5</a></li>
+            <li><a href="#t1">E-Commerce</a></li>
+            <li><a href="#t2">Root Access</a></li>
+            <li><a href="#t3">Jabber (XMPP) Server</a></li>
+            <li><a href="#t4">Project Management</a></li>
+            <li><a href="#t5">Online Training</a></li>
         </ul>
     </div>
-        <div class="span8 pull-right split-center-mid"><h3>24x7 Managed Support</h3><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a lectus ac urna rhoncus mattis eu eu magna. Suspendisse tempus eros sed lorem egestas placerat. Nullam quis tellus in enim facilisis egestas vitae non dolor. Nullam vel sapien quis lorem fringilla dapibus. Aliquam volutpat porta pellentesque. Pellentesque iaculis tellus vitae nisl faucibus dapibus varius nunc mollis. Vestibulum gravida euismod metus nec ullamcorper. Phasellus elementum lorem libero, ac interdum ante.</p>
-    </div>
+        <div class="tab-content">
+            <div class="tu-span pull-right tab-pane active" id="t1">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-magento.png" /><img src="{{ app.request.basepath }}/img/tu-logo-prestashop.png" /></div>
+            <h3>E-Commerce</h3><p>Increase revenue by operating an online store with PrestaShop. Use our one click installer included with every VPS to get started today. Our VPS have enough RAM at an affordable price in order to run your new shop, your website and your email efficiently.</p>
+            </div>
+            <div class="tu-span pull-right tab-pane" id="t2">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-gear.png" /></div>
+            <h3>Root Access</h3><p>Need root access to run third party applications? Choose a VPS product with the memory specifications that best fit your needs to take full control of you server.
+</p>
+            </div>
+            <div class="tu-span pull-right tab-pane" id="t3">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-jabber.png" /></div>
+            <h3>Jabber (XMPP) Server</h3><p>Enhance communication and collaboration within your business with a Jabber server. Share files, notes and instant message communications with free XMPP software that runs beautifully on our line of VPS products. Best of all, its secure and private – just right for your business.</p>
+            </div>
+            <div class="tu-span pull-right tab-pane" id="t4">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-joomla.png" /><img src="{{ app.request.basepath }}/img/tu-logo-drupal.png" /></div>
+            <h3>Project Management</h3><p>Improve communication between clients and your employees alike with a variety of open source software solutions for collaborative project management, bug reporting, support tickets and more.</p>
+            </div>
+            <div class="tu-span pull-right tab-pane" id="t5">
+            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-clipboard.png" /></div>
+            <h3>Online Training</h3><p>Need to ensure accuracy across different groups in your workplace? Setup a company Wiki to ensure associates have information, policies and SOP’s at their fingertips. Need to train in multiple locations? Ensure consistency with online seminars and training through Moodle.</p>
+            </div>
+        </div>
 </div>
 <!-- /#uses -->
+
 <div class="tab-pane active dedi-specification" id="specifications">
     <table class="table table-striped">
         <caption class="a11y">Listing of Business Hosting Plan Specifications and Pricing</caption>
@@ -136,21 +162,31 @@
         <tfoot>
             <tr>
                 <th scope="row">Price</th>
-                <td>$119.95/mo.</td>
-                <td>$139.95/mo.</td>
-                <td>$189.95/mo.</td>
-                <td>$469.95/mo.</td>
-                <td>$569.95/mo.</td>
+                <td><span class="smallprice">$119.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$139.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$189.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$469.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
+                <td><span class="smallprice">$569.95</span> /mo.
+                    <a href="#" class="btn btn-primary over">order now</a></td>
             </tr>
         </tfoot>
         <tbody>
             <tr>
-                <th scope="row">Intel CPU Specs</th>
-                <td>Intel® Core® E2220/E5400</td>
-                <td>Xeon® E3-1220</td>
-                <td>Xeon® E3-1230</td>
-                <td>Intel® Xeon® E5645 </td>
-                <td>Intel® Xeon® E5645</td>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme1">Intel® CPU Specs</span>
+                <div id="showme1" class="collapse">
+                    <p>Every one of our dedicated servers is equipped with either Intel® Core® or Xeon® processors. This helps ensure the fastest and most reliable operation of your dedicated server. In addition, our Elite servers come equipped with a Quad Core Intel® Xeon® CPU with eight-way threading! This provides an affordable and efficient solution to handle even the most robust tasks.</p>
+                </div>
+                </th>
+                <td>Core® E2220/E5400 2.4GHz Dual Core/2T</td>
+                <td>Xeon® 3430 2.4GHz Turbo Quad Core/4T</td>
+                <td>Xeon® 3440 2.53GHz Turbo Quad Core/8T</td>
+                <td>Xeon® E5645 2.4 GHz 5.86 GT/s QPI 6C/12T </td>
+                <td>Xeon® E5645 2.4 GHz 5.86 GT/s QPI 12C/24T</td>
             </tr>
             <tr>
                 <th scope="row">CPU Cache</th>
@@ -177,7 +213,12 @@
                 <td>1333MHz Dual</td>
             </tr>
             <tr>
-                <th scope="row">Disk Space</th>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme2">Disc Space</span>
+                <div id="showme2" class="collapse">
+                    <p>All Dedicated Servers come equipped with Serial ATA 7,200RPM hard drives. SATA is the next generation of hard drive and provides a faster, more reliable & more affordable data storage solution than is offered by most of our competitors.</p>
+                </div>
+                </th>
                 <td>2 x 160GB</td>
                 <td>500GB</td>
                 <td>500GB</td>
@@ -185,7 +226,12 @@
                 <td>600GB</td>
             </tr>
             <tr>
-                <th scope="row">RAID 1 Fault Tolerant</th>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme3">RAID 1 Fault Tolerant</span>
+                <div id="showme3" class="collapse">
+                    <p>RAID 1 (Redundant Array of Independent Disks) is a way of storing your data in two places by placing data on multiple hard disks. By placing data on multiple disks your data is conveniently and automatically backed up, increasing fault tolerance.</p>
+                </div>
+                </th>
                 <td><span class="ir unacceptable">Not Included</span></td>
                 <td><span class="ir unacceptable">Not Included</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -193,7 +239,13 @@
                 <td><span class="ir ideal">Ideal</span></td>
             </tr>
             <tr>
-                <th scope="row">Monthly Premium Transfer</th>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme4">Monthly Premium Transfer</span>
+                <div id="showme4" class="collapse">
+                    <p>Today's broadband connections demand faster and more reliable performance from your web site and email. Our network was specifically built to be expandable for capacity and for throughput. Our data center is connected to the Internet through 3 separate providers with an on demand capacity exceeding 7,500 MBits. We utilize BGP4 Smart Routing and can switch instantly and transparently away from any of our providers that are experiencing latency or downtime. Our advanced knowledge and planning allow us to provide extremely fast and reliable service while still offering affordable web hosting.</p>
+                    <ul><li>Smart Routing (BGP4) over 3 Tier I Providers</li><li>On Demand bandwidth exceeding 7,500 MBits</li></ul>
+                </div>
+                </th>
                 <td>2500GB</td>
                 <td>3000GB</td>
                 <td>4000GB</td>
@@ -201,7 +253,12 @@
                 <td>3000GB</td>
             </tr>
             <tr>
-                <th scope="row">Full cPanel License</th>
+                <th scope="row">
+                <span class="curs" data-toggle="collapse" data-target="#showme5">Full cPanel License</span>
+                <div id="showme5" class="collapse">
+                    <p>Each one of our Dedicated Server plans includes a full license to the award winning cPanel control panel software. Most other companies offer this feature at additional monthly and set-up costs or don't offer it at all. Additional charges apply for Softaculous, please ask your sales person for details.</p>
+                </div>
+                </th>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
                 <td><span class="ir ideal">Ideal</span></td>
@@ -210,7 +267,7 @@
             </tr>
         </tbody>
     </table>  
-    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>         
+    <a href="#" class="btn btn-info">VIEW MORE SPECS</a>
 </div><!-- /#specifications -->
 <div class="tab-pane" id="support">
     <div class="island0 pull-left adthree mr20">
@@ -269,6 +326,17 @@
     </div>
 </div><!-- /#developers -->
 {% endblock %}
+
+{# suggestion #}
+{% block suggestion %}
+Questions? Contact us at 1-888-321-HOST
+{% endblock %}
+
+{# contacttitle #}
+{% block contacttitle %}
+Contact our Dedicated Server Experts
+{% endblock %}
+
 {# testimonial #}
 {% block testimonial %}
     <div class="row span8 island sunken">

@@ -295,14 +295,14 @@ header .nav-pills-contact a.btn {
   width: 33%;
 }
 
-.business-specification thead .table-col-1,
-.business-specification tfoot .table-col-1,
-.business-specification tfoot .table-col-2 {
-
-}
-
 .business-specification thead td {
   border-left-color: #fcfcfc;
+  width: 30%;
+}
+
+.business-specification .table-col-2 {
+  border-left-color: #fcfcfc;
+  width: 30%;
 }
 
 .business-specificaiton tfoot .table-col-1,
@@ -509,7 +509,6 @@ textarea::-webkit-input-placeholder {
   margin-right: 0 auto;
   position: relative;
   text-align: center;
-  width: 6em;
 }
 
 .package-subtitle {
@@ -588,15 +587,65 @@ footer a {
 
 /*------------------------------*/
 
-
-.m-20 {
-  margin: 0 0px 0 -20px;
-}
-
 .dedi-specification .table-striped thead th.table-col-3,
 .dedi-specification .table-striped tfoot td.table-col-3,
 .dedi-specification .table-striped tbody td.table-col-3 {
   background-color: rgba(77, 160, 225, 0.15);
+}
+
+.dedi-specification .table-striped thead th.table-col-3,
+.dedi-specification .table-striped thead th.table-col-4,
+.dedi-specification .table-striped thead th.table-col-5,
+.dedi-specification .table-striped thead th.table-col-6 {
+  border-left: 1px solid #ccc;
+}
+
+.dedi-specification thead th {
+  width: 110px;
+}
+
+.dedi-specification thead td {
+  border-left-color: #fcfcfc;
+  width: 30%;
+}
+
+.vps-specification .table-striped thead th.table-col-2,
+.vps-specification .table-striped tfoot td.table-col-2,
+.vps-specification .table-striped tbody td.table-col-2 {
+  background-color: rgba(77, 160, 225, 0.15);
+  border-left: 1px solid #ccc;
+}
+
+.vps-specification thead td {
+  border-left-color: #fcfcfc;
+  width: 45%;
+}
+
+.vps-specification .table-col-2 {
+  border-left-color: #fcfcfc;
+}
+
+.vps-specificaiton tfoot .table-col-1,
+.vps-specification tfoot .table-col-2 {
+  border-left-color: #fff;
+}
+
+.vps-specification tfoot .table-col-2 {
+  border-right: 1px solid #ccc;
+}
+.vps-specification tfoot {
+  border-bottom: 2px solid #888;
+}
+
+.vps-specification .table-striped thead th.table-col-2 {
+  border-left: 0;
+}
+
+.vps-specification .table-striped thead .table-col-3,
+.vps-specification .table-striped thead .table-col-3 {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
 
 .business-specification .table-striped thead th.table-col-2,
 .business-specification .table-striped tfoot td.table-col-2,
@@ -607,7 +656,8 @@ footer a {
   border-left: 0;
 }
 
-.business-specification .table-striped thead th.table-col-3 {
+.business-specification .table-striped thead .table-col-4,
+.vps-specification .table-striped thead .table-col-3 {
   border-left: 1px solid #ccc;
   border-right: 1px solid #ccc;
 }
@@ -616,10 +666,6 @@ footer a {
   border: 0;
   margin-left: 30px;
   width: 110px;
-}
-
-.table-col-1{
-  width: 500px;
 }
 
 .collapse p {
@@ -636,12 +682,11 @@ footer a {
 
 .m-20 {
   margin: 0 0px 0 -20px;
->>>>>>> vps
 }
 
 .bq-horiz {
   margin: 0;
-  padding: 0 0 66px 30px;
+  padding: 0 0 20px 30px;
 }
 
 .table tfoot tr {
@@ -678,10 +723,6 @@ footer a {
   width: 100%
 }
 
-
-.intro.dedicated_servers {
-  background: url(../../img/leader-dedi-tower.png) no-repeat top center, url(../../img/leader-bg-dedi.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
-
 .smallprice {
   color: #c52228;
   font-weight: 600;
@@ -690,15 +731,20 @@ footer a {
 
 .intro.business_hosting {
   background: url(../../img/leader-biz-robotics.png) no-repeat top center, url(../../img/leader-bg-biz.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
-
   display: block;
-  height: 284px;
+  height: 253px;
 }
 
 .intro.vps_hosting {
-  background: url(http://www.managedinternetpresence.com/cam/leader-vps-server.png) no-repeat top center, url(http://www.managedinternetpresence.com/cam/leader-bg-vps.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  background: url(../../img/leader-vps-server.png) no-repeat top center, url(../../img/leader-bg-vps.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
   display: block;
   height: 286px;
+}
+
+.intro.dedicated_servers {
+  background: url(../../img/leader-dedi-tower.png) no-repeat top center, url(../../img/leader-bg-dedi.jpg) repeat-x 0 0, url(../../img/pattern.gif) repeat 0 0;
+  display: block;
+  height: 284px;
 }
 
 .leader-biz-cta-place {
@@ -710,6 +756,11 @@ footer a {
   margin: 0 -50px 0 0;
 }
 
+.leader-dedi-cta-place {
+  float: right;
+  margin: 123px 157px 0 0;
+}
+
 .tabbg {
   background-color: #f5f5f5;
 }
@@ -719,12 +770,6 @@ footer a {
   padding-bottom: 8px;
   text-align: center;
   text-transform: uppercase;
-  width: 200px;
-}
-
-.leader-dedi-cta-place {
-  float: right;
-  margin: 123px 157px 0 0;
 }
 
 .tier-space {
@@ -972,4 +1017,9 @@ p {
   -moz-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
+}
+
+.blue {
+  border-top: 40px solid #327FB9;
+  border-right: 40px solid #327FB9;
 }
