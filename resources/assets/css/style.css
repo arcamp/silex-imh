@@ -55,7 +55,7 @@
 
 blockquote {
   border: none;
-  margin: 0; 
+  margin: 0;
   padding: 0 0 26px 30px;
 }
 
@@ -189,8 +189,8 @@ header .nav-pills-contact a.btn {
 }
 
 .nav-pills-no-link {
-  line-height: 36px;
   color: #232323;
+  line-height: 36px;
   margin-right: 12px;
 }
 
@@ -209,7 +209,6 @@ header .nav-pills-contact a.btn {
   background: url(../../img/icon-phone.gif) no-repeat 0 0;
   padding-bottom: 1px;
 }
-
 
 .muted {
   color: #888;
@@ -255,9 +254,9 @@ header .nav-pills-contact a.btn {
   color: #c52127;
   content: "\201C";
   display: block;
+  float: left;
   font-size: 600%;
   font-family: Helvetica, Arial, sans-serif;
-  float: left;
   margin: 20px 20px 40px -30px;
 }
 
@@ -276,8 +275,8 @@ header .nav-pills-contact a.btn {
 
 .table tbody td,
 .table tfoot td {
-  text-align: center;
   border-left: 1px solid #ccc;
+  text-align: center;
 }
 
 .table tbody th {
@@ -338,9 +337,9 @@ header .nav-pills-contact a.btn {
   border-bottom: 1px solid #ccc;
   border-collapse: collapse;
   border-right: 1px solid #ccc;
+  height: 150px;
   margin-left: 0;
   padding: 10px 70px;
-  height: 150px;
 }
 
 .matrix > li:nth-child(even) {
@@ -374,18 +373,18 @@ header .nav-pills-contact a.btn {
 
 .well .row-fluid .span4:nth-child(even):before,
 .well .row-fluid .span4:first-child:after {
-  position: absolute;
-  top: 50%;
-  right: -20px;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: -10px;
   border-color: transparent;
   border-left-color: #b4b4b4;
   border-style: solid;
   border-width: 10px;
   content: ' ';
+  display: inline-block;
+  height: 0;
+  margin-left: -10px;
+  position: absolute;
+  right: -20px;
+  top: 50%;
+  width: 0;
 }
 
 .well-inverted {
@@ -402,17 +401,17 @@ header .nav-pills-contact a.btn {
 }
 
 .ir { /* image replacement */
+  color: transparent;
   font: 0/0 a;
-    text-shadow: none;
-    color: transparent;
+  text-shadow: none;
 }
 
 .table .ir {
+  background: transparent no-repeat 0 0;
   display: block;
   height: 18px;
   margin: 0 auto;
   width: 18px;
-  background: transparent no-repeat 0 0;
 }
 
 /**
@@ -472,13 +471,16 @@ header .nav-pills-contact a.btn {
 .suggestion {
   margin: 36px auto;
 }
-.suggestion h3 {
+
+.suggestion 
+h3 {
   font-family: "adelle-sans", Helvetica, Arial, sans-serif;
   font-weight: 400;
   text-align: center;
-  /*background: url(../../img/bolt.png) no-repeat left center;*/
 }
-.suggestion img {
+
+.suggestion 
+img {
   margin-right: .5em;
 }
 
@@ -504,7 +506,8 @@ textarea::-webkit-input-placeholder {
   color: #232323;
 }
 
-.rostrum-tiered-item h3 {
+.rostrum-tiered-item 
+h3 {
   background-repeat: no-repeat;
   margin-right: 0 auto;
   position: relative;
@@ -588,8 +591,8 @@ footer a {
 /*------------------------------*/
 
 .comtop {
-  margin-top: 50px;
   margin-bottom: 10px;
+  margin-top: 50px;
 }
 
 .island-nopad {
@@ -600,14 +603,14 @@ footer a {
 }
 
 .combox-l {
-  width: 428px;
   padding: 20px;
   text-align: center;
+  width: 428px;
 }
 .combox {
-  width: 429px;
   padding: 20px 20px 20px 21px;
   text-align: center;
+  width: 429px;
 }
 
 .dedi-specification .table-striped thead th.table-col-3,
@@ -939,6 +942,7 @@ li {
   padding-bottom: 3px;
   width: 100%;
 }
+
 .centered {
   text-align: center;
 }

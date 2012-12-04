@@ -20,6 +20,7 @@
         <div class="span3"><span class="btn btn-primary">order now</span></div>
      </div>
 {% endblock %}
+
 {# secondplaceplan #}
 {% block secondplaceplan %}
     <h3 class="blanky package-title">
@@ -44,6 +45,7 @@
         <a href="#" class="btn btn-primary over">order now</a>
     </div>
 {% endblock %}
+
 {# firstplaceplan #}
 {% block firstplaceplan %}
     <div class="badge"><p>BEST<br/>VALUE</p></div>
@@ -167,32 +169,31 @@
             <li><a href="#t5">Online Training</a></li>
         </ul>
     </div>
-        <div class="tab-content">
-            <div class="tu-span pull-right tab-pane active" id="t1">
-            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-magento.png" /><img src="{{ app.request.basepath }}/img/tu-logo-prestashop.png" /></div>
-            <h3>E-Commerce</h3><p>Increase revenue by operating an online store with PrestaShop. Use our one click installer included with every VPS to get started today. Our VPS have enough RAM at an affordable price in order to run your new shop, your website and your email efficiently.</p>
-            </div>
-            <div class="tu-span pull-right tab-pane" id="t2">
-            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-gear.png" /></div>
-            <h3>Root Access</h3><p>Need root access to run third party applications? Choose a VPS product with the memory specifications that best fit your needs to take full control of you server.
-</p>
-            </div>
-            <div class="tu-span pull-right tab-pane" id="t3">
-            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-jabber.png" /></div>
-            <h3>Jabber (XMPP) Server</h3><p>Enhance communication and collaboration within your business with a Jabber server. Share files, notes and instant message communications with free XMPP software that runs beautifully on our line of VPS products. Best of all, its secure and private – just right for your business.</p>
-            </div>
-            <div class="tu-span pull-right tab-pane" id="t4">
-            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-joomla.png" /><img src="{{ app.request.basepath }}/img/tu-logo-drupal.png" /></div>
-            <h3>Project Management</h3><p>Improve communication between clients and your employees alike with a variety of open source software solutions for collaborative project management, bug reporting, support tickets and more.</p>
-            </div>
-            <div class="tu-span pull-right tab-pane" id="t5">
-            <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-clipboard.png" /></div>
-            <h3>Online Training</h3><p>Need to ensure accuracy across different groups in your workplace? Setup a company Wiki to ensure associates have information, policies and SOP’s at their fingertips. Need to train in multiple locations? Ensure consistency with online seminars and training through Moodle.</p>
-            </div>
+    <div class="tab-content">
+        <div class="tu-span pull-right tab-pane active" id="t1">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-magento.png" /><img src="{{ app.request.basepath }}/img/tu-logo-prestashop.png" /></div>
+        <h3>E-Commerce</h3><p>Increase revenue by operating an online store with PrestaShop. Use our one click installer included with every VPS to get started today. Our VPS have enough RAM at an affordable price in order to run your new shop, your website and your email efficiently.</p>
         </div>
-</div>
-<!-- /#uses -->
-
+        <div class="tu-span pull-right tab-pane" id="t2">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-gear.png" /></div>
+        <h3>Root Access</h3><p>Need root access to run third party applications? Choose a VPS product with the memory specifications that best fit your needs to take full control of you server.
+</p>
+        </div>
+        <div class="tu-span pull-right tab-pane" id="t3">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-jabber.png" /></div>
+        <h3>Jabber (XMPP) Server</h3><p>Enhance communication and collaboration within your business with a Jabber server. Share files, notes and instant message communications with free XMPP software that runs beautifully on our line of VPS products. Best of all, its secure and private – just right for your business.</p>
+        </div>
+        <div class="tu-span pull-right tab-pane" id="t4">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-joomla.png" /><img src="{{ app.request.basepath }}/img/tu-logo-drupal.png" /></div>
+        <h3>Project Management</h3><p>Improve communication between clients and your employees alike with a variety of open source software solutions for collaborative project management, bug reporting, support tickets and more.</p>
+        </div>
+        <div class="tu-span pull-right tab-pane" id="t5">
+        <div class="uses-img pull-right"><img src="{{ app.request.basepath }}/img/tu-logo-clipboard.png" /></div>
+        <h3>Online Training</h3><p>Need to ensure accuracy across different groups in your workplace? Setup a company Wiki to ensure associates have information, policies and SOP’s at their fingertips. Need to train in multiple locations? Ensure consistency with online seminars and training through Moodle.</p>
+        </div>
+    </div>
+</div><!-- /#uses -->
+<!-- #specification -->
 <div class="tab-pane active dedi-specification" id="specifications">
     <table class="table table-striped">
         <caption class="a11y">Listing of Business Hosting Plan Specifications and Pricing</caption>
@@ -322,6 +323,7 @@
     </table>  
     <a href="#" class="btn btn-info">VIEW MORE SPECS</a>
 </div><!-- /#specifications -->
+<!-- #support -->
 <div class="tab-pane" id="support">
     <div class="island0 pull-left adthree mr20">
         <h2>24/7 Award-Winning Support</h2>
@@ -350,13 +352,14 @@
         </ul>
     </div>
 </div><!-- /#support -->
+<!-- #developers -->
 <div class="tab-pane" id="developers">
     <div class="island0 pull-left adthree mr20">
         <h2>Spend time with clients and coding, not hassling with hosting.</h2>
         <p>Take control of your Dedicated Server and utilize it as you see fit. With our CentOS environment, and optional Root Access, the possibilities are endless. Call us today to get started!</p>
     </div>
-<div class="island20 pull-left raised adthree mr20">
-    <h3 class="">Included:</h3>
+    <div class="island20 pull-left raised adthree mr20">
+        <h3 class="">Included:</h3>
         <ul class="checkli">
             <li>CentOS updates and security patches</li>
             <li>cPanel and WHM support</li>
@@ -382,12 +385,12 @@
 
 {# suggestion #}
 {% block suggestion %}
-Questions? Contact us at 1-888-321-HOST
+    Questions? Contact us at 1-888-321-HOST
 {% endblock %}
 
 {# contacttitle #}
 {% block contacttitle %}
-Contact our Dedicated Server Experts
+    Contact our Dedicated Server Experts
 {% endblock %}
 
 {# testimonial #}
