@@ -593,12 +593,20 @@ footer a {
 }
 
 .island-nopad {
+  background-color: #fff;
+  display: block;
   outline: 1px solid #ccc;
+  zoom: 1;
 }
 
-.combox {
-  width: 430px;
+.combox-l {
+  width: 428px;
   padding: 20px;
+  text-align: center;
+}
+.combox {
+  width: 429px;
+  padding: 20px 20px 20px 21px;
   text-align: center;
 }
 
