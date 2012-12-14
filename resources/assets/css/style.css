@@ -267,6 +267,10 @@ header .nav-pills-contact a.btn {
   background: url(../../img/icon-tag.png) no-repeat 0 0;
 }
 
+.icon-bolt {
+  background: url(../../img/bolt.png) no-repeat 0 0;
+}
+
 .muted {
   color: #888;
 }
@@ -591,7 +595,7 @@ img {
 }
 
 .suggestion {
-  margin: 36px auto;
+  margin: 40px auto;
 }
 
 .suggestion 
@@ -822,15 +826,55 @@ h3.contact + .row-fluid {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*------------------------------*/
+
+/**
+ * Add these to boostrap
+ */
+.label {
+  font-family: "adelle-sans";
+  font-size: 18px;
+  margin: 20px 10px 0px 0px;
+  padding: 8px 10px 12px;
+  text-align: center;
+  width: 40%;
+}
+
+.label-success {
+  font-family: "adelle-sans";
+  background-color: #8EB73E;
+}
+
+.label-important {
+  font-family: "adelle-sans";
+  background-color: #c52228;
+}
+
+.alert {
+  font-family: "adelle-sans";
+  margin-bottom: 0px;
+  margin-top: 20px;
+}
 
 .sm ul li li {
   list-style-image: url(../../img/bullet-in.gif);
 }
 
-/**
- * Add these to boostrap
- */
 .carousel {
   margin-bottom: 0;
 }
